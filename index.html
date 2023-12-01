@@ -3,65 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página con Efectos</title>
+  <title>Universidad XYZ</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      background-color: #f4f4f4;
     }
 
     header {
-      background-color: #333;
+      background-color: #003366;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
 
+    nav {
+      background-color: #336699;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
     section {
-      padding: 40px;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
       text-align: center;
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .hover-scale {
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .hover-scale:hover {
-      transform: scale(1.1);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>¡Bienvenido a la Facultad de Ciencias Economicas y Sociales!</h1>
+    <h1>Universidad XYZ</h1>
+    <p>Transformando vidas a través de la educación.</p>
   </header>
 
-  <section class="fade-in">
-    <h2>Efecto de Fade In</h2>
-    <p>Este contenido aparecerá con un efecto de fade in al cargar la página.</p>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#programas">Programas Académicos</a>
+    <a href="#admision">Admisión</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido a la Universidad XYZ</h2>
+    <p>Somos una institución comprometida con la excelencia académica y la formación integral de nuestros estudiantes.</p>
   </section>
 
-  <section class="hover-scale">
-    <h2>Efecto de Hover Scale</h2>
-    <p>Pasa el ratón sobre este contenido para ver el efecto de escala.</p>
+  <section id="programas">
+    <h2>Programas Académicos</h2>
+    <p>Descubre nuestros programas de estudio diseñados para impulsar tu éxito profesional.</p>
   </section>
+
+  <section id="admision">
+    <h2>Proceso de Admisión</h2>
+    <p>Obtén información sobre cómo unirte a nuestra comunidad universitaria.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Contáctanos para obtener más información!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Universidad XYZ. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
