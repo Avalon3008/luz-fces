@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Efectos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>¡Bienvenido a la Facultad de Ciencias Economicas y Sociales!</h1>
+  </header>
+
+  <section class="fade-in">
+    <h2>Efecto de Fade In</h2>
+    <p>Este contenido aparecerá con un efecto de fade in al cargar la página.</p>
+  </section>
+
+  <section class="hover-scale">
+    <h2>Efecto de Hover Scale</h2>
+    <p>Pasa el ratón sobre este contenido para ver el efecto de escala.</p>
+  </section>
+
+</body>
+</html>
